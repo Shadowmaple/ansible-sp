@@ -1,0 +1,11 @@
+- hosts: mannix # 可为分组mine或全部all
+  remote_user: root
+  tasks:
+  - name: install tree
+    shell: apt-get install tree
+  - name: install htop
+    shell: apt-get install htop
+    # apt模块阿里云那边apt-update会出错，迷惑性为
+    # apt:
+    #   name: htop
+    #   update_cache: false

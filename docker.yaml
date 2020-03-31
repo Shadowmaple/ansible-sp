@@ -1,0 +1,4 @@
+- hosts: mine
+  remote_user: root
+  roles:
+    - docker
